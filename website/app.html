@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+
+  </head>
+
+  <body>
+      <header>
+      <div  class="headr" id="App-header">
+          
+          <h1>Content selection system</h1>
+      </div>
+          <div class="customer_details">
+                <h5> Welcome YYY</h5>
+            </div>
+
+       
+    </header>
+
+        <div class="article" id="artcle">
+            <button class="ccc">Create Content Cycle</button>
+            <button class="ccc">Edit Content Cycle</button>
+           
+        </div>
+        <div class="form" id="forms">
+        <div id ="info1" class="dropdown">
+            
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="cc-creation">Content Cycle
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" id="dropdown-menu-select">
+                    <li><a href="#">March</a></li>
+                    <li><a href="#">June</a></li>
+                    <li><a href="#">September</a></li>
+                    <li><a href="#">December</a></li>
+            </ul>
+        </div>
+
+        <div id ="info2" class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="airlines">Airlines
+                    <span class="caret"></span></button>
+                    
+
+            <ul class="dropdown-menu" id="dropdown-menu-select">
+                    <li><a href="#">AGL</a></li>
+                    <li><a href="#">Rossiya</a></li>
+                    <li><a href="#">Lufthansa</a></li>
+                    <li><a href="#">Atlas</a></li>
+            </ul>
+        </div>
+          <div class=button-submit>
+        <button type="submit" id="form-submit">Submit</button>
+              </div>
+
+        </div>
+
+       <article>
+
+       
+
+
+        <div class="tabs">
+                <button class="tablink" onclick="openPage('Movie', this, 'orange')">Movies</button>
+                <button class="tablink" onclick="openPage('Apps', this, 'cyan')">Apps</button>
+                <button class="tablink" onclick="openPage('Music', this, 'green')">Music</button>
+                <button class="tablink" onclick="openPage('Magazine', this, 'blue')">Magazine</button>
+                <button class="tablink" onclick="openPage('Magazine', this, 'blue')">Shopping</button>
+                <button class="tablink" onclick="openPage('Magazine', this, 'blue')">TV Shows</button>
+
+                <button id=add-row onclick="appendRow()">+</button>
+                
+        </div>
+
+        <div class="table">
+
+                <table id="table1" align="center">
+                        <thead>
+                
+                          <tr>
+                            <th>Movie Name-Eng</th>
+                            <th>Movie Name-Dan</th>
+                            <th>Movie Name-Glndic</th>
+                            <th>File Name</th>
+                            <th>Format</th>
+                            <th>Language-Eng</th>
+                            <th>Language-Dan</th>
+                            <th>Category</th>
+                            <th>Genre-Eng</th>
+                            <th>Genre-Dan</th>
+                            <th>Genre-Glndic</th>
+                            <th>Duration</th>
+                            <th>Rating</th>
+                            <th>Director</th>
+                            <th>Cast</th>
+                            <th>Synopsis_Eng</th>
+                            <th>Synopsis_Dan</th>
+                            <th>Synopsis_Glndic</th>
+                            
+                          </tr>
+
+                          
+                        </thead>
+                        <tbody>
+                          <!-- <tr>
+                              <td><input type="checkbox" name="record"></td>
+                              <td>Peter Parker</td>
+                              <td>peterparker@mail.com</td>
+                            </tr> -->
+                
+                        </tbody>
+                      </table>
+        </div>
+
+        <button id="finish">Apply & Submit</button>
+        </article>
+
+        
+  </body>
+  </html>
+
+  <script>
+  
+  // $(document).ready(function(){
+  //   $.getJSON("movies.json", function(data){
+  //     var fulldata = " ";
+  //     $.each(data,function(key,value){
+  //       fulldata += "<tr>";
+  //       fulldata += "<td>" + value.MOVIE_TITLE_ENG + "</td>";
+  //        fulldata += "<td>" + value.MOVIE_TITLE_DAN + "</td>";
+  //         fulldata += "<td>" + value.MOVIE_TITLE_greenlandic + "</td>";
+  //         fulldata += "<td>" + value.FILE_NAME + "</td>";
+  //         fulldata += "<td>" + value.FORMAT + "</td>";
+  //         fulldata += "<td>" + value.LANGUAGE_OPTIONS_ENG + "</td>";
+  //         fulldata += "<td>" + value.LANGUAGE_OPTIONS_DAN + "</td>";
+  //         fulldata += "<td>" + value.GENRE_ENG + "</td>";
+  //         fulldata += "<td>" + value.GENRE_DAN + "</td>";
+  //         fulldata += "<td>" + value.GENRE_greenlandic + "</td>";
+  //         fulldata += "<td>" + value.DURATION + "</td>";
+  //         fulldata += "<td>" + value.RATING + "</td>";
+  //         fulldata += "<td>" + value.DIRECTOR + "</td>";
+  //         fulldata += "<td>" + value.CAST + "</td>";
+  //         fulldata += "<td>" + value.SYNOPSIS_ENG + "</td>";
+  //         fulldata += "<td>" + value.SYNOPSIS_DAN + "</td>";
+  //         fulldata += "<td>" + value.SYNOPSIS_greenlandic + "</td>";
+  //         fulldata += "</tr>";
+  //     }); 
+  //     $("#table1 ").append(fulldata);
+  //   });
+  // });
+</script>
